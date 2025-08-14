@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #16171A; }
 
 a {
   text-decoration: none;
@@ -18,3 +25,160 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+.pt-120 {
+  padding-top: 120px; }
+
+.pb-120 {
+  padding-bottom: 120px; }
+
+.rp_header {
+  z-index: 1;
+  padding: 16px 0;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08); }
+  .rp_header::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(56% + 60px);
+    height: 100%;
+    background: #C90F16;
+    z-index: -1;
+    -webkit-clip-path: polygon(45px 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(45px 0, 100% 0, 100% 100%, 0% 100%); }
+
+.rp_header_logo a img {
+  width: 300px; }
+
+.rp_header_boxes {
+  gap: 40px; }
+
+.rp_icon_box .rp_icon_wrapper {
+  background: #FFFFFF;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px; }
+
+.rp_icon_box .rp_icon_text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF; }
+
+.rp_icon_box .rp_icon_text p {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 700; }
+  .rp_icon_box .rp_icon_text p a {
+    color: #FFFFFF; }
+
+.rp_hero_section {
+  min-height: 780px;
+  background-color: #F2EDEB;
+  padding: 140px 10px;
+  z-index: 1; }
+  .rp_hero_section .rp_hero_bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(56% + 60px);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; }
+
+.rp_hero_box {
+  padding: 85px 20px 85px 40px;
+  background: #C90F16;
+  max-width: 1040px;
+  margin-left: -50px; }
+  .rp_hero_box h6 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px; }
+  .rp_hero_box h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+
+.rp_icon_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 10px; }
+
+.container-1570 {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 12px; }
+
+.rp_feature_section {
+  padding: 40px 0 90px;
+  background: #16171A; }
+
+.rp_ft_title {
+  font-size: 24px; }
+
+.rp_icon_box_vertical span {
+  color: #C90F16;
+  font-size: 32px; }
+
+.rp_icon_box_vertical h5 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif; }
+
+.rp_service_section {
+  background: #F2EDEB;
+  padding: 120px 100px; }
+
+.rp_section_title {
+  font-size: 48px; }
+
+.rp_service_card {
+  background: #FFFFFF; }
+  .rp_service_card .rp_card_thumbnail .card_icon {
+    width: 60px;
+    height: 60px;
+    background: #C90F16;
+    color: #FFFFFF;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 24px;
+    top: 24px; }
+  .rp_service_card .rp_card_content {
+    padding: 24px; }
+    .rp_service_card .rp_card_content h5 {
+      font-size: 24px; }
+    .rp_service_card .rp_card_content p {
+      font-weight: 500; }
+
+.rp_about_content > p {
+  font-size: 18px; }
+
+.rp_about_content .rp_icon_list li {
+  color: #16171A; }
+  .rp_about_content .rp_icon_list li .icon_list_icon {
+    color: #C90F16; }

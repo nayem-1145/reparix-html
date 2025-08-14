@@ -12,9 +12,17 @@ $primary-font: 'Raleway', sans-serif;
 $secondary-font: 'DM Sans', sans-serif;
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $secondary-font;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    font-weight: 700;
+    margin: 0;
+    color: $secondary-color;
 }
 
 a {
@@ -32,5 +40,209 @@ ul {
     margin: 0;
 }
 
+.pt-120 {
+    padding-top: 120px;
+}
+
+.pb-120 {
+    padding-bottom: 120px;
+}
+
 
 //header section start
+.rp_header {
+    z-index: 1;
+    padding: 16px 0;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+
+    &::before {
+        content: ''; 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        width: calc(56% + 60px); 
+        height: 100%;
+        background: $primary-color;
+        z-index: -1;
+        clip-path: polygon(45px 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.rp_header_logo {
+    a {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+.rp_header_boxes {
+    gap: 40px;
+}
+
+.rp_icon_box {
+    .rp_icon_wrapper {
+        background: $color-white; 
+        padding: 6px; 
+        box-sizing: border-box;
+        width: 60px; 
+        height: 60px;
+    }
+
+    .rp_icon_text {
+        h6 {
+            font-size: 14px;
+            font-weight: 600;
+            color: $color-white;
+        }
+        p {
+            font-size: 18px;
+            color: $color-white;
+            font-weight: 700;
+
+            a {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+
+//hero section start
+.rp_hero_section {
+    min-height: 780px;
+    background-color: #F2EDEB;
+    padding: 140px 10px;
+    z-index: 1;
+
+    .rp_hero_bg {
+        position: absolute; 
+        right: 0; 
+        top: 0;
+        width: calc(56% + 60px);  
+        height: 100%; 
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.rp_hero_box {
+    padding: 85px 20px 85px 40px;
+    background: $primary-color; 
+    max-width: 1040px;
+    margin-left: -50px;
+
+    h6 {
+        font-size: 28px; 
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: 8px;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        color: $color-white;
+        margin-bottom: 20px;
+    }
+}
+
+.rp_icon_list {
+    li {
+        display: flex; 
+        align-items: center; 
+        gap: 8px;
+        font-size: 20px; 
+        font-weight: 600;
+        color: $color-white;
+        margin-bottom: 10px;
+    }
+}
+
+
+.container-1570 {
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+//feature section start
+.rp_feature_section {
+    padding: 40px 0 90px;
+    background: $secondary-color;
+}
+
+.rp_ft_title {
+    font-size: 24px; 
+}
+
+.rp_icon_box_vertical {
+    span {
+        color: $primary-color; 
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 24px; 
+        font-weight: 600; 
+        font-family:  $secondary-font;
+    }
+}
+
+
+
+//service section start
+
+.rp_service_section {
+    background: #F2EDEB;
+    padding: 120px 100px;
+}
+.rp_section_title {
+    font-size: 48px; 
+}
+
+.rp_service_card {
+    background: $color-white;
+    .rp_card_thumbnail {
+        .card_icon {
+            width: 60px;  
+            height: 60px; 
+            background: $primary-color; 
+            color: $color-white;
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            left: 24px; 
+            top: 24px;
+        }
+    }
+
+    .rp_card_content {
+        padding: 24px;
+        h5 {
+            font-size: 24px;
+        }
+        p {
+            font-weight: 500;
+        }
+    }
+}
+
+.rp_about_content {
+    & > p {
+        font-size: 18px;
+    }
+
+    .rp_icon_list {
+        li {
+            color: $secondary-color;
+            .icon_list_icon {
+                color: $primary-color;
+            }
+        }
+    }
+} 
