@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+//variables
+$primary-color: #C90F16;
+$secondary-color: #16171A;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'DM Sans', sans-serif;
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    &:hover {
+        color: $primary-color;
+    }   
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+//header section start
