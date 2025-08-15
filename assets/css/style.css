@@ -33,6 +33,12 @@ ul {
 .pb-120 {
   padding-bottom: 120px; }
 
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
 .bg-color {
   background-color: #F2EDEB; }
 
@@ -325,3 +331,81 @@ ul {
       border-radius: 50%;
       font-size: 32px;
       outline: 20px solid rgba(201, 15, 22, 0.2); }
+
+.rp_info_section .rp_info_image {
+  max-width: 640px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+.rp_info_content {
+  padding-left: 70px; }
+  .rp_info_content .rp_icon_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .rp_info_content .rp_icon_list li {
+      width: calc(50% - 10px);
+      font-size: 18px;
+      font-weight: 500;
+      color: #696969;
+      margin-bottom: 0; }
+      .rp_info_content .rp_icon_list li span {
+        color: #C90F16;
+        -webkit-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        transform: translateY(1px); }
+
+.rp_call_to_action {
+  background: #C90F16;
+  padding: 70px 0; }
+
+.rp_white_btn {
+  background: #FFFFFF;
+  color: #C90F16;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px 36px;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .rp_white_btn:hover {
+    background: #16171A;
+    color: #FFFFFF; }
+
+.rp_blog_card .date i {
+  color: #C90F16; }
+
+.rp_blog_card h4 {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .rp_blog_card h4:hover {
+    color: #C90F16; }
+
+.rp_blog_card .rp_explore_btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  color: #C90F16; }
+  .rp_blog_card .rp_explore_btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #C90F16;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .rp_blog_card .rp_explore_btn:hover::before {
+    width: 40px; }

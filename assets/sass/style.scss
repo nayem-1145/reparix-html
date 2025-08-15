@@ -51,6 +51,14 @@ ul {
     padding-bottom: 120px;
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .bg-color {
     background-color: $section-bg;
 }
@@ -365,6 +373,7 @@ ul {
     position: absolute;
     right: 0; 
     bottom: 0;
+
     .rp_video_play_btn {
         width: 160px; 
         height: 160px; 
@@ -390,6 +399,104 @@ ul {
             border-radius: 50%;
             font-size: 32px;
             outline: 20px solid rgba($primary-color, 0.2);
+        }
+    }
+}
+
+
+//info section start
+.rp_info_section {
+   .rp_info_image {
+        max-width: 640px;
+        position: absolute;
+        left: 0; 
+        top: 0;
+        height: 100%; 
+        object-fit: cover;
+   }
+}
+
+
+.rp_info_content {
+    padding-left: 70px;
+    .rp_icon_list {
+        display: flex; 
+        gap: 20px;
+        flex-wrap: wrap;
+
+        li {
+            width: calc(50% - 10px);
+            font-size: 18px; 
+            font-weight: 500;
+            color: $text-color;
+            margin-bottom: 0;
+
+            span {
+                color: $primary-color;
+                transform: translateY(1px);
+            }
+        }
+    }
+}
+
+//call to action start
+.rp_call_to_action { 
+    background: $primary-color; 
+    padding: 70px 0;
+}
+
+.rp_white_btn {
+    background: $color-white;
+    color: $primary-color; 
+    text-transform: uppercase;
+    font-weight: 700; 
+    padding: 20px 36px;
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:hover {
+        background: $secondary-color; 
+        color: $color-white;
+    }
+}
+
+//blog section start
+.rp_blog_card {
+    .date {
+        i {
+            color: $primary-color;
+        }
+    }
+
+    h4 {
+        transition: 0.3s;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .rp_explore_btn {
+        text-transform: uppercase; 
+        font-size: 16px; 
+        font-weight: 700; 
+        position: relative; 
+        color: $primary-color; 
+
+        &::before {
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            bottom: -3px; 
+            width: 100%; 
+            height: 2px; 
+            background: $primary-color; 
+            transition: 0.3s;
+        }
+
+        &:hover {
+            &::before {
+                width: 40px;
+            }
         }
     }
 }
