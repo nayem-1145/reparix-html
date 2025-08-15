@@ -500,3 +500,127 @@ ul {
         }
     }
 }
+
+
+//brand section start
+.rp_brand_section {
+    padding: 80px 0;
+
+    .rp_brand_title {
+        text-align: center;
+        h5 {
+            display: inline-block;
+            position: relative; 
+
+            &::before {
+                content: ''; 
+                position: absolute; 
+                width: 430px;
+                height: 1px; 
+                background: #D8DDE1;
+                left: -440px;
+                top: 20px;
+            }
+            
+            &::after {
+                content: ''; 
+                position: absolute; 
+                width: 430px;
+                height: 1px; 
+                background: #D8DDE1;
+                right: -440px;
+                top: 15px;
+            }
+        }
+    }
+}
+
+
+.rp_brand_slider {
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
+    .swiper-slide {
+        display: inline-block;
+        width: 236px;
+    }
+    .rp_brand_logo {
+        display: inline-block;
+        background: $color-white;
+        padding: 20px 40px;
+        border: 1px solid #D8DDE1;
+        border-radius: 100px;
+    }
+}
+
+.rp_contact_box {
+    padding: 40px 24px;
+    border-radius: 10px;
+    border: 1px solid #F2EDEB;
+    text-align: center;
+
+    .icon_wrapper {
+        width: 80px; 
+        height: 80px; 
+        background: $primary-color; 
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 24px;
+        color: $color-white;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 500; 
+    }
+
+    &:hover {
+        .icon_wrapper {
+            background: $secondary-color;
+            color: $color-white;
+        }
+    }
+}
+
+
+//contact section start
+
+.rp_contact_area {
+    background: $primary-color;
+    padding: 60px;
+    h3 {
+        font-size: 36px;
+    }
+}
+
+.rp_contact_form {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+    label {
+        width: calc(50% - 10px);
+        color: $color-white;
+        input {
+            display: block; 
+            width: 100%;
+            padding: 20px 24px;
+            border: 0;
+            outline: 0;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+    }
+
+    textarea {
+        display: block; 
+        width: 100%;
+        padding: 20px 24px;
+        border: 0;
+        outline: 0;
+        border-radius: 10px;
+        margin-top: 8px;
+    }
+}

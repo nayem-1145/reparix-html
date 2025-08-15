@@ -6,5 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+  const brandSlider = new Swiper('.rp_brand_slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 0, 
+      disableOnInteraction: false,
+    }
+  });
+
+
 
 });

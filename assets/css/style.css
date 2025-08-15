@@ -409,3 +409,105 @@ ul {
     transition: 0.3s; }
   .rp_blog_card .rp_explore_btn:hover::before {
     width: 40px; }
+
+.rp_brand_section {
+  padding: 80px 0; }
+  .rp_brand_section .rp_brand_title {
+    text-align: center; }
+    .rp_brand_section .rp_brand_title h5 {
+      display: inline-block;
+      position: relative; }
+      .rp_brand_section .rp_brand_title h5::before {
+        content: '';
+        position: absolute;
+        width: 430px;
+        height: 1px;
+        background: #D8DDE1;
+        left: -440px;
+        top: 20px; }
+      .rp_brand_section .rp_brand_title h5::after {
+        content: '';
+        position: absolute;
+        width: 430px;
+        height: 1px;
+        background: #D8DDE1;
+        right: -440px;
+        top: 15px; }
+
+.rp_brand_slider .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear; }
+
+.rp_brand_slider .swiper-slide {
+  display: inline-block;
+  width: 236px; }
+
+.rp_brand_slider .rp_brand_logo {
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 20px 40px;
+  border: 1px solid #D8DDE1;
+  border-radius: 100px; }
+
+.rp_contact_box {
+  padding: 40px 24px;
+  border-radius: 10px;
+  border: 1px solid #F2EDEB;
+  text-align: center; }
+  .rp_contact_box .icon_wrapper {
+    width: 80px;
+    height: 80px;
+    background: #C90F16;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 30px; }
+  .rp_contact_box p {
+    font-size: 18px;
+    font-weight: 500; }
+  .rp_contact_box:hover .icon_wrapper {
+    background: #16171A;
+    color: #FFFFFF; }
+
+.rp_contact_area {
+  background: #C90F16;
+  padding: 60px; }
+  .rp_contact_area h3 {
+    font-size: 36px; }
+
+.rp_contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px; }
+  .rp_contact_form label {
+    width: calc(50% - 10px);
+    color: #FFFFFF; }
+    .rp_contact_form label input {
+      display: block;
+      width: 100%;
+      padding: 20px 24px;
+      border: 0;
+      outline: 0;
+      border-radius: 10px;
+      margin-top: 8px; }
+  .rp_contact_form textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 24px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    margin-top: 8px; }
