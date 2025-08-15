@@ -51,6 +51,10 @@ ul {
     padding-bottom: 120px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -61,6 +65,16 @@ ul {
 
 .bg-color {
     background-color: $section-bg;
+}
+
+@media (max-width: 767px) {
+    .pt-120 {
+        padding-top: 70px;
+    }
+
+    .pb-120 {
+        padding-bottom: 70px;
+    }
 }
 
 
@@ -123,6 +137,87 @@ ul {
 }
 
 
+
+@media (max-width: 1399px) {
+    .rp_header {
+
+        &::before {
+            width: calc(58% + 60px); 
+        }
+        .container {
+            max-width: 100%;
+        }
+
+        .rp_header_logo {
+            a {
+                img {
+                    width: 250px;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1199px) {
+    .rp_header_boxes {
+        gap: 20px;
+    }
+
+    .rp_header {
+
+        .rp_icon_box {
+            .rp_icon_wrapper {
+                width: 40px; 
+                height: 40px;
+                padding: 10px;
+            }
+
+            .rp_icon_text {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 991px) {
+
+    .rp_header {
+        &::before {
+            display: none;
+        }
+
+        .rp_icon_box {
+            .rp_icon_wrapper {
+                width: 40px; 
+                height: 40px;
+                padding: 10px;
+                box-shadow: 0 0 10px  rgba(0,0,0,0.1);
+            }
+
+            .rp_icon_text {
+                h6 {
+                    color: $secondary-color;
+                }
+                p {
+                    font-size: 16px;
+                    color: $secondary-color;
+                    a {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
 //hero section start
 .rp_hero_section {
     min-height: 780px;
@@ -181,6 +276,45 @@ ul {
 }
 
 
+@media (max-width: 767px) {
+
+    .rp_hero_section {
+        min-height: auto;
+        padding: 80px 10px;
+    }
+
+    .rp_hero_box {
+        padding: 85px 20px 85px 40px;
+        margin-left: 0;
+    }
+
+    .rp_hero_box h6 {
+        font-size: 20px;
+    }
+    .rp_hero_box h1 {
+        font-size: 42px;
+    }
+
+    .rp_icon_list li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) { 
+
+    .rp_hero_box {
+        padding: 60px 24px;
+    }
+
+    .rp_hero_box h1 {
+        font-size: 36px;
+    }
+
+}
+
+
+
+
 .container-1570 {
     max-width: 1570px;
     margin: 0 auto;
@@ -207,6 +341,13 @@ ul {
         font-size: 24px; 
         font-weight: 600; 
         font-family:  $secondary-font;
+    }
+}
+
+
+@media (max-width: 1399px) {
+    .rp_icon_box_vertical h5 {
+        font-size: 20px;
     }
 }
 
@@ -351,6 +492,50 @@ ul {
 }
 
 
+@media (max-width: 1800px) {
+    .rp_service_section {
+        padding: 120px 40px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .rp_service_section {
+        padding: 120px 20px;
+    }
+
+    .rp_services_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .rp_service_card {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 740px) {
+
+    .rp_service_section {
+        padding: 70px 12px;
+    }
+
+    .rp_service_card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .rp_section_title {
+        font-size: 42px;
+    }
+}
+
+
+
+
+
+
 //advantage section start
 .rp_advantage_section {
     padding: 220px 0 120px;
@@ -373,6 +558,8 @@ ul {
     position: absolute;
     right: 0; 
     bottom: 0;
+    border-top: 1px solid $primary-color;
+    border-left: 1px solid $primary-color;
 
     .rp_video_play_btn {
         width: 160px; 
@@ -404,6 +591,60 @@ ul {
 }
 
 
+@media (max-width: 1680px) {
+    .rp_advantage_section {
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    .rp_advantage_content {
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .rp_advantage_section {
+        padding: 130px 0 120px;
+    }
+
+    .rp_video_box {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1399px) {
+
+    .rp_advantage_section {
+        padding: 100px 0 80px;
+    }
+
+    .rp_video_box {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .rp_advantage_section {
+        padding: 100px 0 80px;
+    }
+
+    .rp_video_box {
+        position: relative;
+        max-width: 100%; 
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rp_advantage_section {
+        padding: 70px 0;
+    }
+ }
+
+
 //info section start
 .rp_info_section {
    .rp_info_image {
@@ -418,7 +659,10 @@ ul {
 
 
 .rp_info_content {
-    padding-left: 70px;
+    padding: 24px;
+    background: $section-bg;
+    position: relative; 
+    z-index: 2;
     .rp_icon_list {
         display: flex; 
         gap: 20px;
@@ -436,6 +680,42 @@ ul {
                 transform: translateY(1px);
             }
         }
+    }
+}
+
+@media (max-width: 1199px) {
+    .rp_info_section {
+        .rp_info_image {
+            position: initial;
+            margin: 0 auto; 
+            display:  block;
+            max-width: 100%;
+            padding: 0 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rp_info_section {
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    .rp_info_section {
+        .rp_info_image {
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .rp_info_content .rp_icon_list {
+        flex-wrap: wrap;
+    }
+
+    .rp_info_content .rp_icon_list li {
+        width: 100%;
     }
 }
 
@@ -553,10 +833,103 @@ ul {
     }
 }
 
+
+
+//testimonial section start
+.rp_testimonial_box {
+    background: $secondary-color;
+    padding: 40px;
+}
+
+.rp_testimonial_single_box {
+    .rpt_single_reviews {
+        gap: 3px;
+        li {
+            color: #FEC51B;
+
+        }
+    }
+
+    p {
+        font-size: 18px; 
+        font-weight: 500;
+        color: $color-white;
+        font-weight: $primary-font;
+    }
+}
+
+
+.rpt_author_box {
+    background: transparent;
+    padding: 15px 16px;
+    border: 1px solid rgba(216, 221, 225, 0.45);
+    cursor: pointer;
+    display: inline-block;
+
+    h4 {
+        font-size: 24px;
+        color: $color-white;
+    }
+
+    .designation {
+        padding-left: 40px;
+        font-size: 16px; 
+        font-weight: 500;
+        color: $primary-color;
+        position: relative;
+        &::before {
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            top: 50%; 
+            width: 30px; 
+            height: 1px; 
+            background: $primary-color;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+
+.rpt_author_slider {
+    padding: 0 1px;
+
+    .swiper-slide {
+        display: inline-block;
+        width: initial;
+    }
+
+    .swiper-slide-thumb-active {
+        .rpt_author_box {
+            background: $primary-color;
+            border-color: $primary-color;
+
+            .designation {
+                color: $color-white;
+                &::before {
+                    background: $color-white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+    .rp_testimonial_single_box {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+//contact box section start
+
 .rp_contact_box {
     padding: 40px 24px;
     border-radius: 10px;
-    border: 1px solid #F2EDEB;
+    border: 1px solid rgba(22, 23, 26, 0.2);
     text-align: center;
 
     .icon_wrapper {
@@ -622,5 +995,180 @@ ul {
         outline: 0;
         border-radius: 10px;
         margin-top: 8px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .rp_contact_area {
+        padding: 24px;
+    }
+    .rp_contact_form label {
+        width: 100%;
+    }
+}
+
+//faq section start
+.rp_accordion {
+    .accordion-item {
+        border: 1px solid #D8DDE1;
+
+        + .accordion-item {
+            margin-top: 24px;
+        }
+        
+        .accordion-header {
+            a {
+                padding: 15px 24px 15px 20px;
+                font-size: 24px;
+                color: $secondary-color;
+                font-weight: $primary-font;
+                display: block;
+                width: 100%;
+                font-weight: 700;
+                position: relative;
+                background: $primary-color;
+                color: $color-white;
+                transition: 0.3s;
+
+                &::after {
+                    content: '-'; 
+                    position: absolute; 
+                    right: 20px;
+                    top: 22px;
+                    width: 18px; 
+                    height: 18px; 
+                    border-radius: 50%; 
+                    font-size: 12px; 
+                    line-height: 6px;
+                    background: $color-white;
+                    color: $primary-color;
+                    display: inline-flex; 
+                    align-items: center; 
+                    justify-content: center;
+                    transition: 0.3s;
+                }
+
+                &.collapsed {
+                    background: $color-white; 
+                    color: $secondary-color;
+                    &::after {
+                        content: '+';
+                        background: $primary-color;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        .accordion-collapse {
+            border-top: 1px solid #D8DDE1;
+            transition: 0.3s;
+            background: $primary-color;
+            color: $color-white;
+        }
+    }
+    
+}
+
+
+//footer section start
+.rp_footer_section {
+    background: $secondary-color;
+}
+
+.rp_footer_widget {
+    h4 {
+        color: $color-white;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .rp_footer_info {
+        font-size: 18px; 
+        font-weight: 500;
+        color: $color-white;
+    }
+
+    .rp_footer_mail {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+        transition: 0.3s; 
+
+        &:hover {
+            color: $color-white;
+            opacity: 0.6;
+        }
+    }
+
+    .rp_footer_menu {
+        li {
+            a {
+                font-size: 18px; 
+                font-weight: 500;
+                color: $color-white;
+                transition: 0.3s;
+                position: relative;
+                display: block;
+
+                &::before {
+                    content: '/';
+                    opacity: 0;
+                    position: absolute;
+                    left: 0; 
+                    top:  0;
+                    color: $color-white;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    padding-left: 10px;
+                    color: rgba($color-white, 0.6);
+                    &::before {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            + li {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .rp_footer_icon_list {
+        li {
+            + li {
+                margin-top: 24px;
+            }
+            .icon_wrapper {
+                width: 50px; 
+                height: 50px;  
+                display: inline-flex; 
+                align-items: center; 
+                justify-content: center;
+                border-radius: 4px;
+                font-size: 18px;
+                color: $color-white;
+                border: 1px solid rgba(216, 221, 225, 0.3);
+            }
+            p {
+                font-size: 18px; 
+                font-weight: 500; 
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.rp_footer_copyright {
+    margin-top: 100px;
+    background: $primary-color;
+    padding: 30px 0;
+
+    p {
+        font-size: 18px;
     }
 }
