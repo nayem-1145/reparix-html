@@ -7,6 +7,8 @@ $primary-color: #C90F16;
 $secondary-color: #16171A;
 $color-white: #FFFFFF;
 $color-black: #000000;
+$section-bg: #F2EDEB;
+$text-color: #696969;
 
 $primary-font: 'Raleway', sans-serif;
 $secondary-font: 'DM Sans', sans-serif;
@@ -16,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    color: $text-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,6 +49,10 @@ ul {
 
 .pb-120 {
     padding-bottom: 120px;
+}
+
+.bg-color {
+    background-color: $section-bg;
 }
 
 
@@ -152,12 +159,16 @@ ul {
 .rp_icon_list {
     li {
         display: flex; 
-        align-items: center; 
+        align-items: start; 
         gap: 8px;
         font-size: 20px; 
         font-weight: 600;
         color: $color-white;
         margin-bottom: 10px;
+
+        span {
+            transform: translateY(2px);
+        }
     }
 }
 
@@ -246,3 +257,139 @@ ul {
         }
     }
 } 
+
+.rp_solution_title {
+    p {
+        font-size: 24px; 
+        font-weight: 700; 
+        font-family: $primary-font;
+    }
+}
+
+
+.rp_outline_btn {
+    padding: 20px 36px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    font-size: 16px;  
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    svg {
+        transform: translateY(-2px);
+        path {
+            fill: $primary-color;
+            transition: 0.3s;
+        }
+    }
+
+    &:hover {
+        background: $primary-color; 
+        color: $color-white;
+
+        svg {
+            path {
+                fill: $color-white;
+            }
+        }
+    }
+}
+
+
+
+.rp_sl_card {
+    overflow: hidden;
+    .rp_sl_card_title {
+        padding: 24px 12px;
+        position: absolute;
+        bottom:0; 
+        left: 0;
+        background: $primary-color;
+        width: 100%;
+        text-align: center; 
+        color: $color-white;
+        transition: 0.2s;
+        transition-delay: 0.3s;
+        h5 {
+            color: $color-white;
+            font-size: 24px;
+        }
+    }
+
+    .rp_sl_card_content {
+        position: absolute;
+        left: 0; 
+        top: 100%; 
+        width: 100%; 
+        height: 100%;
+        background: $primary-color;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .rp_sl_card_title {
+            bottom: -100px;
+            transition-delay: 0.2s;
+        }
+        .rp_sl_card_content {
+            transition-delay: 0.35s;
+            top: 0; 
+        }
+    }
+}
+
+
+//advantage section start
+.rp_advantage_section {
+    padding: 220px 0 120px;
+    background: $color-white;
+}
+
+.rp_advantage_content {
+    .rp_icon_list {
+        li {
+            color: $secondary-color;
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.rp_video_box {
+    max-width: 840px;
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    .rp_video_play_btn {
+        width: 160px; 
+        height: 160px; 
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+        display: inline-flex; 
+        align-items: center; 
+        justify-content: center;
+        position: absolute; 
+        left: 50%; 
+        top: 50%; 
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+
+        span {
+            width: 90px; 
+            height: 90px; 
+            background: $primary-color; 
+            color: $color-white;
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 32px;
+            outline: 20px solid rgba($primary-color, 0.2);
+        }
+    }
+}
