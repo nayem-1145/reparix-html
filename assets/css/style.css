@@ -243,6 +243,17 @@ ul {
   transform: translateY(2px);
 }
 
+@media (max-width: 1199px) {
+  .rp_hero_section .rp_hero_bg {
+    display: none;
+  }
+
+  .rp_hero_box {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .rp_hero_section {
     min-height: auto;

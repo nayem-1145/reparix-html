@@ -160,6 +160,7 @@ ul {
 }
 
 @media (max-width: 1199px) {
+
     .rp_header_boxes {
         gap: 20px;
     }
@@ -272,6 +273,21 @@ ul {
         span {
             transform: translateY(2px);
         }
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .rp_hero_section {
+
+        .rp_hero_bg {
+            display: none;
+        }
+    }
+
+    .rp_hero_box {
+        margin-top: 24px;
+        margin-left: 0;
     }
 }
 
